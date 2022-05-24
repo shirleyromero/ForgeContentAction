@@ -10,7 +10,7 @@ modules:
         and:
           entityPropertyExists:
             entity: content
-            propertyKey: 'CONTENT_ACTION_PROPERTY'
+            propertyKey: CONTENT_ACTION_PROPERTY
   function:
     - key: resolver
       handler: index.handler
