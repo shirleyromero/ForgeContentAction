@@ -1,0 +1,21 @@
+modules:
+  confluence:contentAction:
+    - key: contentaction-hello-world-content-action
+      resource: main
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: contentAction
+      displayConditions:
+        and:
+          entityPropertyExists:
+            entity: content
+            propertyKey: 'CONTENT_ACTION_PROPERTY'
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/03974453-1f26-45f1-b7e1-a4ec8e3ae39a
